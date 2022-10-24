@@ -2,7 +2,7 @@ let clima = {
   apiKey: "3b802fe54c18285dcbe3aa3e6aed3923", 
   fetchWeather: function (ciudad) {
     fetch(
-      "http://api.openweathermap.org/data/2.5/weather?q=" + 
+      "https://api.openweathermap.org/data/2.5/weather?q=" + 
         ciudad +
         "&units=metric&lang=sp&appid=" +
         this.apiKey
