@@ -1,0 +1,80 @@
+body {
+    background: center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+.caja {
+    background: rgba(0, 0, 0, 0.250);
+    color: rgb(255, 252, 252);
+    padding: 2em;
+    border-radius: 60px;
+    width: 100%;
+    max-width: 420px;
+    margin: 3em;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.buscador {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+button:hover{
+    background:gray ;
+}
+h1.temperatura{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.descripcion{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.cargando.clima{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.cargando.clima:after{
+    visibility: visible;
+    content: Cargando;
+    color: rgba(243, 240, 240, 0.939);
+    position: absolute;
+    top:0;
+    left: 20px;
+}
